@@ -1,0 +1,58 @@
+.StaticImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Mask {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) -25.33%,
+    rgba(0, 0, 0, 0.53) 58.44%,
+    rgba(0, 0, 0, 0.45) 89.27%
+  );
+  mask-image: revert;
+  -webkit-mask-image: url("./rounded_rectangle.svg");
+  mask-image: url("./rounded_rectangle.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: auto 75vh;
+}
+
+.bg {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) -25.33%,
+    rgba(0, 0, 0, 0.53) 58.44%,
+    rgba(0, 0, 0, 0.45) 89.27%
+  );
+}
+
+.normal {
+  -webkit-mask: url("./rounded_rectangle.svg") center/contain no-repeat;
+}
+
+.inverted {
+  -webkit-mask: url("./rounded_rectangle.svg") center/contain no-repeat,
+    linear-gradient(#fff 0 0);
+  mask: url("./rounded_rectangle.svg") center/contain no-repeat,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: destination-out;
+  -webkit-mask-composite: exclude;
+  mask-composite: exclude;
+  mask-size: auto 75vh;
+}
+
+@keyframes flash {
+  0% {
+    border-color: #fff;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #fff;
+  }
+}
