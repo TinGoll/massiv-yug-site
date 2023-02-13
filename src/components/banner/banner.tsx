@@ -45,10 +45,10 @@ const PrintedComponent: React.FC<PrintedComponentProps> = ({
   const [flash, setFlash] = React.useState<boolean>(true);
 
   React.useEffect(() => {
-    const timeShow = 1500;
-    const speedClean = 50;
-    const speedTyping = 100;
-    const delay = 300;
+    const timeShow = 2500;
+    const speedClean = 100;
+    const speedTyping = 200;
+    const delay = 400;
 
     let operation: string = "show";
     let previusTime = Date.now();
@@ -164,8 +164,11 @@ const Banner = () => {
               printedArray={[
                 " кухню",
                 " мебель",
-                " двери",
+                " дверю? ;)",
                 " лестницу",
+                " автомобиль",
+                " гидро-насос",
+                " телевизор"
               ]}
               sx={{
                 textTransform: "uppercase",

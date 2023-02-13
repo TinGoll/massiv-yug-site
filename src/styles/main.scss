@@ -29,7 +29,6 @@ dd {
   margin: 0;
 }
 
-
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul,
 ol {
@@ -60,7 +59,6 @@ select {
   font: inherit;
 }
 
-
 .container {
   margin: 0 auto;
   max-width: 1330px;
@@ -68,10 +66,10 @@ select {
 }
 
 .headerDivider {
-  border-left:1px solid #38546d; 
-  border-right:1px solid #16222c; 
-  height:80px;
-  position:absolute;
-  right:249px;
-  top:10px; 
+  border-left: 1px solid #38546d;
+  border-right: 1px solid #16222c;
+  height: 80px;
+  position: absolute;
+  right: 249px;
+  top: 10px;
 }

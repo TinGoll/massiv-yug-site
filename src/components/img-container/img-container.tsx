@@ -21,6 +21,7 @@ const ImgContainer: React.FC<ImgContainerProps> = ({
             height: "358px",
             borderRadius: "1000px",
             overflow: "hidden",
+ 
           },
           ...(Array.isArray(props.sx) ? props.sx : [props.sx]),
         ]}
