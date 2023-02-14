@@ -1,0 +1,19 @@
+.NavigationList {
+  margin: 0;
+  padding: 0;
+  & li {
+    list-style: decimal-leading-zero;
+    padding-left: 16px;
+    & p {
+      position: relative;
+      display: inline-block;
+      & a {
+        color: #8f8fa3;
+        text-decoration: none;
+        &:hover {
+          color: #d8d8df;
+        }
+      }
+    }
+  }
+}

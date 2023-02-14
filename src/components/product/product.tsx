@@ -6,6 +6,8 @@ import ImgContainer from "../img-container/img-container";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import * as styles from "./product.module.scss";
+import SvgPdf from "./svg-pdf";
+import { BannerButton } from "../banner/banner";
 
 const ProductButton = styled(Button)((props) => ({
   borderRadius: "69px",
@@ -116,6 +118,38 @@ const Product = () => {
             );
           })}
         </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 3,
+            mt: 8,
+          }}
+        >
+          <SvgPdf />
+          <Typography
+            sx={{
+              fontSize: 16,
+              fontWeight: 500,
+              lineHeight: "117.5%",
+              color: "#000",
+            }}
+          >
+            massiv-yug-catalog.pdf
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: 16,
+              fontWeight: 400,
+              color: "#5A5A72",
+            }}
+          >
+            73 mb
+          </Typography>
+        </Box>
+        <BannerButton>Получить каталог</BannerButton>
       </BlockWrapper>
     </section>
   );

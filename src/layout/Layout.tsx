@@ -96,13 +96,6 @@ function Footer(props: BoxProps) {
       {...props}
       sx={[
         {
-          p: 2,
-          gap: 2,
-          bgcolor: "background.surface",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
           gridColumn: "1 / -1",
           borderBottom: "1px solid",
           borderColor: "divider",

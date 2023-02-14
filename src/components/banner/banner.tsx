@@ -18,7 +18,7 @@ const bounce = keyframes`
   }
 `;
 
-const BannerButton = styled(Button)((props) => ({
+export const BannerButton = styled(Button)((props) => ({
   marginTop: "34px",
   padding: "39px 73px",
   borderRadius: "193px",

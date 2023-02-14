@@ -5,6 +5,9 @@ import HeaderWrapper from "../components/header/header-wrapper/header-wrapper";
 import Banner from "../components/banner/banner";
 import BlockWrapper from "../components/block-wrapper/block-wrapper";
 import Product from "../components/product/product";
+import Footer from "../components/footer/footer";
+import AboutCompany from "../components/about-company/about-company";
+import BlockDivider from "../components/block-divider/block-divider";
 
 const IndexPage: React.FC<PageProps> = () => {
   const [open, setOpen] = React.useState<boolean>(false);
@@ -16,8 +19,10 @@ const IndexPage: React.FC<PageProps> = () => {
         <Layout.Main>
           <Banner />
           <Product />
+          <BlockDivider />
+          <AboutCompany />
         </Layout.Main>
-        <Layout.Footer>Footer</Layout.Footer>
+        <Footer />
       </Layout.Root>
     </Layout.Global>
   );

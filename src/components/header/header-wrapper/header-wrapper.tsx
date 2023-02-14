@@ -67,7 +67,7 @@ const HeaderWrapper = () => {
             <NavigationItem sticky={sticky} to="#">Акции</NavigationItem>
             <NavigationItem sticky={sticky} to="#">Почему Вы?</NavigationItem>
             <NavigationItem sticky={sticky} to="#">Партнерам</NavigationItem>
-            <NavigationItem sticky={sticky} to="#">О компании</NavigationItem>
+            <NavigationItem sticky={sticky} to="#about-company">О компании</NavigationItem>
             <NavigationItem sticky={sticky} to="#">Контакты</NavigationItem>
             <NavigationButton fullWidth variant="outlined" color="neutral">
               ЛК Клиента
