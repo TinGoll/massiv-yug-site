@@ -2,6 +2,7 @@ import { Box, Typography, styled, BoxProps } from "@mui/joy";
 import React from "react";
 import { mqMax } from "../../../utils/media-queries";
 import SvgMassivYug from "./svg-massiv-yug";
+import { navigate } from "gatsby";
 
 const First = styled(Typography)(({ theme }) => ({
   margin: 0,
@@ -43,6 +44,7 @@ const HeaderLogo = (props: HeaderLogoProps) => {
   return (
     <Box
       {...props}
+      onClick={() => navigate("/")}
       sx={[
         {
           display: "flex",
@@ -55,11 +57,7 @@ const HeaderLogo = (props: HeaderLogoProps) => {
     >
       <Svg sticky={props.sticky} />
       <Box sx={{ padding: "0 28px" }}>
-        <First
-          sx={(theme) => ({
-          })}
-          level="body1"
-        >
+        <First sx={(theme) => ({})} level='body1'>
           Массив Юг
         </First>
         <Second
@@ -67,9 +65,9 @@ const HeaderLogo = (props: HeaderLogoProps) => {
             color: props.sticky
               ? theme.colorSchemes.dark.palette.text.secondary
               : theme.colorSchemes.dark.palette.text.primary,
-            display: props.sticky ? "none" : "block"
+            display: props.sticky ? "none" : "block",
           })}
-          level="body3"
+          level='body3'
         >
           от идеи до воплощения в каждой мелочи
         </Second>
