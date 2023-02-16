@@ -57,32 +57,32 @@ const Footer = () => {
           <ul className={styles.NavigationList}>
             <li>
               <p>
-                <Link to="#"> Продукция </Link>
+                <Link to="/"> Продукция </Link>
               </p>
             </li>
             <li>
               <p>
-                <Link to="#"> Акции </Link>
+                <Link to="/"> Акции </Link>
               </p>
             </li>
             <li>
               <p>
-                <Link to="#"> Почему Вы? </Link>
+                <Link to="/"> Почему Вы? </Link>
               </p>
             </li>
             <li>
               <p>
-                <Link to="#"> Партнерам </Link>
+                <Link to="/"> Партнерам </Link>
               </p>
             </li>
             <li>
               <p>
-                <Link to="#"> О компании </Link>
+                <Link to="/"> О компании </Link>
               </p>
             </li>
             <li>
               <p>
-                <Link to="#"> Контакты </Link>
+                <Link to="/"> Контакты </Link>
               </p>
             </li>
           </ul>

@@ -64,11 +64,11 @@ const HeaderWrapper = () => {
         <Navigation>
           <NavigationMenu sticky={sticky} open={open} id="primary-navigation">
             <NavigationItem sticky={sticky} to="#product">Продукция</NavigationItem>
-            <NavigationItem sticky={sticky} to="#promotion">Акции</NavigationItem>
-            <NavigationItem sticky={sticky} to="/">Почему Вы?</NavigationItem>
-            <NavigationItem sticky={sticky} to="/">Партнерам</NavigationItem>
+            <NavigationItem sticky={sticky} to="#">Акции</NavigationItem>
+            <NavigationItem sticky={sticky} to="#">Почему Вы?</NavigationItem>
+            <NavigationItem sticky={sticky} to="#">Партнерам</NavigationItem>
             <NavigationItem sticky={sticky} to="#about-company">О компании</NavigationItem>
-            <NavigationItem sticky={sticky} to="/">Контакты</NavigationItem>
+            <NavigationItem sticky={sticky} to="#">Контакты</NavigationItem>
             <NavigationButton fullWidth variant="outlined" color="neutral">
               ЛК Клиента
             </NavigationButton>
