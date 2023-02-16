@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Orchidea Pro";
+  src: url("OrchideaPro-SemiBold.eot");
+  src: local("Orchidea Pro SemiBold"), local("OrchideaPro-SemiBold"),
+    url("OrchideaPro-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("OrchideaPro-SemiBold.woff2") format("woff2"),
+    url("OrchideaPro-SemiBold.woff") format("woff"),
+    url("OrchideaPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}

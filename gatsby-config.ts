@@ -14,7 +14,17 @@ const config: GatsbyConfig = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", 
+  {
+    resolve: `gatsby-plugin-web-font-loader`,
+    options: {
+      custom: {
+        families: ['Orchidea Pro'],
+        urls: ['/fonts/orchidea-pro/orchidea-pro.css'],
+      },
+    },
+  },
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

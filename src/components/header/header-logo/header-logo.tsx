@@ -10,6 +10,7 @@ const First = styled(Typography)(({ theme }) => ({
   lineHeight: "38px",
   textTransform: "uppercase",
   color: theme.palette.common.white,
+  fontFamily: "Orchidea Pro",
   [mqMax[3]]: {
     fontSize: "24px",
   },

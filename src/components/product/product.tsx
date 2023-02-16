@@ -46,12 +46,13 @@ const Product = () => {
           level="h3"
           sx={{
             fontSize: "55px",
-            fontWeight: 500,
+            fontWeight: 600,
             lineHeight: "117.5%",
             textAlign: "center",
             letterSpacing: "-0.02em",
             textTransform: "uppercase",
             mt: 3,
+            fontFamily: "Orchidea Pro"
           }}
         >
           Уникальная текстура <br /> натурального дерева

@@ -12,7 +12,7 @@ const ImgContainer: React.FC<ImgContainerProps> = ({
   ...props
 }) => {
   return (
-    <Box sx={{display: "flex", flexDirection: "column", gap: 4}}>
+    <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
       <Box
         {...props}
         sx={[
@@ -21,7 +21,7 @@ const ImgContainer: React.FC<ImgContainerProps> = ({
             height: "358px",
             borderRadius: "1000px",
             overflow: "hidden",
- 
+            boxShadow: "sm"
           },
           ...(Array.isArray(props.sx) ? props.sx : [props.sx]),
         ]}
@@ -29,17 +29,19 @@ const ImgContainer: React.FC<ImgContainerProps> = ({
         {children}
       </Box>
 
-      <Typography
-        sx={{
-          fontSize: "21px",
-          fontWeight: 600,
-          lineHeight: "139%",
-          textAlign: "center",
-          color: "#000",
-        }}
-      >
-        {title}
-      </Typography>
+      {title && (
+        <Typography
+          sx={{
+            fontSize: "21px",
+            fontWeight: 600,
+            lineHeight: "139%",
+            textAlign: "center",
+            color: "#000",
+          }}
+        >
+          {title}
+        </Typography>
+      )}
     </Box>
   );
 };

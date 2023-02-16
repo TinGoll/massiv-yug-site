@@ -29,7 +29,13 @@ export const BannerButton = styled(Button)((props) => ({
   textAlign: "center",
 }));
 
-const PrintedText = styled(Typography)((props) => ({}));
+const PrintedText = styled(Typography)((props) => ({
+  fontFamily: "Orchidea Pro",
+  fontWeight: 600,
+  ["& span"]: {
+    color: props.theme.palette.primary[500],
+  },
+}));
 
 interface PrintedComponentProps extends TypographyProps {
   printedArray?: Array<string>;
@@ -125,7 +131,7 @@ const PrintedComponent: React.FC<PrintedComponentProps> = ({
       ]}
     >
       {props.children}
-      {value}
+      <span>{value}</span>
     </PrintedText>
   );
 };
@@ -161,15 +167,7 @@ const Banner = () => {
             <PrintedComponent
               level="h1"
               disabled={false}
-              printedArray={[
-                " кухню",
-                " мебель",
-                " дверю? ;)",
-                " лестницу",
-                " автомобиль",
-                " гидро-насос",
-                " телевизор"
-              ]}
+              printedArray={[" кухню", " мебель", " дверь", " лестницу"]}
               sx={{
                 textTransform: "uppercase",
                 color: "white",
@@ -189,6 +187,7 @@ const Banner = () => {
                 fontWeight: 600,
                 lineHeight: "69px",
                 maxWidth: 600,
+                fontFamily: "Orchidea Pro",
               }}
             >
               предвосхищающую все ожидания
